@@ -7,7 +7,6 @@ buildscript {
         classpath 'com.android.tools.build:gradle:4.1.2'
     }
 
-    //下面这部分是修复androidx.core冲突的问题
     subprojects {
         project.configurations.all {
             resolutionStrategy.eachDependency { details ->
